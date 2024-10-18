@@ -440,7 +440,7 @@ GameObject:
   m_Component:
   - component: {fileID: 502851206}
   - component: {fileID: 502851207}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Gun
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -903,6 +903,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 231c4e8d510ff744da47b9ecaa70abe4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  playerHealth: 5
+  invincilityTime: 2
 --- !u!1 &1855239689
 GameObject:
   m_ObjectHideFlags: 0
@@ -1042,8 +1044,12 @@ PrefabInstance:
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: 639942534280088486, guid: 358f70d539693324db78fb3b56ca3ea9, type: 3}
+      propertyPath: moveSpeed
+      value: 5.871232
+      objectReference: {fileID: 0}
+    - target: {fileID: 639942534280088486, guid: 358f70d539693324db78fb3b56ca3ea9, type: 3}
       propertyPath: rotationSpeed
-      value: 2500
+      value: 3500
       objectReference: {fileID: 0}
     - target: {fileID: 3002246859329978617, guid: 358f70d539693324db78fb3b56ca3ea9, type: 3}
       propertyPath: m_LocalPosition.x
@@ -1088,6 +1094,10 @@ PrefabInstance:
     - target: {fileID: 3500056656387968928, guid: 358f70d539693324db78fb3b56ca3ea9, type: 3}
       propertyPath: m_Name
       value: Player
+      objectReference: {fileID: 0}
+    - target: {fileID: 3500056656387968928, guid: 358f70d539693324db78fb3b56ca3ea9, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 3500056656387968928, guid: 358f70d539693324db78fb3b56ca3ea9, type: 3}
       propertyPath: m_TagString
